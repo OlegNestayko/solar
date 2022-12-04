@@ -30,18 +30,16 @@ body {
 }
 
 body {
-  /* width: 100vw; */
-
   font-family: 'Noto Sans', sans-serif;
   font-weight: var(--main-fw);
   font-size: var(--main-fz);
   line-height: var(--main-lh);
   color: var(--main-dark);
+
   background-color: #303030;
 }
 
 /* Common styles--------------------------- */
-
 .section {
   margin: 0px auto;
 
@@ -95,9 +93,6 @@ body {
 }
 
 /* ---------------------------------------- */
-.header__logo {
-}
-
 .header__pic {
   max-width: 100%;
 }
@@ -109,10 +104,13 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+
   min-width: 100%;
   min-height: 100%;
+
   background: url(../img/main/hero/back.jpg) center / cover no-repeat;
 }
+
 .hero-wrapper {
   padding-top: 220px;
   text-align: center;
@@ -121,12 +119,14 @@ body {
 .hero__text {
   color: var(--main-light);
 }
+
 .hero__title {
   font-size: 64px;
   line-height: 87px;
   font-variant: small-caps;
   color: var(--main-light);
 }
+
 .hero__desc {
   padding-bottom: 50px;
 
@@ -134,9 +134,11 @@ body {
   line-height: 57px;
   color: var(--main-light);
 }
+
 .hero__btn {
   color: var(--main-light);
 }
+
 /* ---------------------------------------- */
 .hero-list {
   padding-top: 106px;
@@ -149,9 +151,8 @@ body {
 .hero__item:not(:first-child) {
   padding-left: 20px;
 }
-.hero__link {
-}
 
+/* Hero font awesome styles---------------- */
 .fa-instagram,
 .fa-paper-plane,
 .fa-whatsapp,
