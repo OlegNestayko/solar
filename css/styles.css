@@ -30,7 +30,7 @@ body {
 }
 
 body {
-  padding: 10px;
+  /* position: relative; */
 
   font-family: 'Noto Sans', sans-serif;
   font-weight: var(--main-fw);
@@ -38,7 +38,7 @@ body {
   line-height: var(--main-lh);
   color: var(--main-dark);
 
-  background-color: #303030;
+  background-color: var(--main-light);
 }
 
 .wrapper {
@@ -49,7 +49,7 @@ body {
 .section {
   margin: 0px auto;
 
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .title {
@@ -75,9 +75,6 @@ body {
 
 .list {
   list-style: none;
-}
-
-.btn {
 }
 
 /* ---------------------------------------- */
@@ -135,9 +132,11 @@ body {
   padding-top: 220px;
 
   text-align: center;
-  opacity: 0;
+
   transition: animation 4s ease 0s;
   animation: hero 3s forwards;
+
+  opacity: 0;
 }
 
 @keyframes hero {
@@ -238,6 +237,7 @@ a:hover::after {
 
   .hero__title {
     padding-top: 15px;
+
     font-size: 48px;
     line-height: calc(64 / 48);
   }
@@ -286,4 +286,75 @@ a:hover::after {
 .fa-facebook-f:hover,
 .fa-facebook-f:focus {
   color: var(--accent);
+}
+
+/* Services section------------------------ */
+
+.services-wrapper {
+  margin-top: 611px;
+}
+
+/* ---------------------------------------- */
+.services__title {
+  padding-bottom: 60px;
+}
+
+/* ---------------------------------------- */
+.services-content {
+  display: flex;
+}
+
+.services__list {
+  padding-right: 89px;
+}
+
+/* ---------------------------------------- */
+.services__item:not(:last-child) {
+  padding-bottom: 50px;
+}
+
+.services__subtitle {
+  padding-bottom: 15px;
+}
+
+.services__desc {
+  font-size: var(--text-fz);
+}
+
+/* ---------------------------------------- */
+.services__img {
+  max-width: 100%;
+}
+
+/* Services mobile section----------------- */
+@media (max-width: 1200px) {
+  .services-content {
+    flex-direction: column;
+  }
+
+  .services__title {
+    padding-bottom: 20px;
+
+    text-align: center;
+  }
+
+  .services__list {
+    padding-right: 0;
+  }
+
+  .services__img {
+    /* width: 100%; */
+  }
+}
+@media (max-width: 767px) {
+  .services-wrapper {
+    margin-top: 670px;
+  }
+
+  .services__item:not(:last-child) {
+    padding-bottom: 0px;
+  }
+  .services__desc {
+    padding-bottom: 15px;
+  }
 }
