@@ -341,19 +341,25 @@ a:hover::after {
   .services__list {
     padding-right: 0;
   }
-
-  .services__img {
-    /* width: 100%; */
-  }
 }
+
 @media (max-width: 767px) {
   .services-wrapper {
-    margin-top: 670px;
+    margin-top: 640px;
+  }
+
+  .services__list {
+    text-align: center;
   }
 
   .services__item:not(:last-child) {
     padding-bottom: 0px;
   }
+
+  .services__subtitle {
+    /* text-align: center; */
+  }
+
   .services__desc {
     padding-bottom: 15px;
   }
