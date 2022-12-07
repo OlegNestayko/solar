@@ -251,6 +251,7 @@ a:hover::after {
 /* ---------------------------------------- */
 .hero-list {
   padding-top: 106px;
+  padding-bottom: 20px;
 
   display: flex;
   align-items: center;
@@ -291,7 +292,7 @@ a:hover::after {
 /* Services section------------------------ */
 
 .services-wrapper {
-  margin-top: 611px;
+  margin-top: 545px;
 }
 
 /* ---------------------------------------- */
@@ -328,8 +329,13 @@ a:hover::after {
 
 /* Services mobile section----------------- */
 @media (max-width: 1200px) {
+  .services-wrapper {
+    margin-top: 560px;
+  }
+
   .services-content {
     flex-direction: column;
+    align-items: center;
   }
 
   .services__title {
@@ -340,15 +346,7 @@ a:hover::after {
 
   .services__list {
     padding-right: 0;
-  }
-}
 
-@media (max-width: 767px) {
-  .services-wrapper {
-    margin-top: 640px;
-  }
-
-  .services__list {
     text-align: center;
   }
 
@@ -356,11 +354,23 @@ a:hover::after {
     padding-bottom: 0px;
   }
 
-  .services__subtitle {
-    /* text-align: center; */
-  }
-
   .services__desc {
     padding-bottom: 15px;
+  }
+
+  .services__img {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-wrapper {
+    margin-top: 500px;
+  }
+}
+
+@media (max-width: 416px) {
+  .services-wrapper {
+    margin-top: 540px;
   }
 }
