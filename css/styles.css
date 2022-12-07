@@ -30,8 +30,6 @@ body {
 }
 
 body {
-  /* position: relative; */
-
   font-family: 'Noto Sans', sans-serif;
   font-weight: var(--main-fw);
   font-size: var(--main-fz);
@@ -118,6 +116,10 @@ body {
 
 /* Hero section---------------------------- */
 .hero {
+  padding-bottom: 100px;
+}
+
+.hero-wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -126,9 +128,7 @@ body {
   min-height: 100%;
 
   background: url(../img/main/hero/back.jpg) center / cover no-repeat;
-}
 
-.hero-wrapper {
   padding-top: 220px;
 
   text-align: center;
@@ -365,12 +365,12 @@ a:hover::after {
 
 @media (max-width: 767px) {
   .services-wrapper {
-    margin-top: 500px;
+    /* margin-top: 500px; */
   }
 }
 
 @media (max-width: 416px) {
   .services-wrapper {
-    margin-top: 540px;
+    /* margin-top: 560px; */
   }
 }
